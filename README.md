@@ -24,6 +24,8 @@ INSTALLED_APPS = (
 Now when you run `./manage.py runserver` or `./manage.py collectstatic` your
 `gulp` tasks will run as well!
 
+Furthermore, you can use `./manage.py collectstatic --skip-gulp` to run `collectstatic` without running gulp. This may be useful during development if your gulp build takes a lot of time.
+
 ### Settings
 
 `GULP_CWD` defaults to the current working directory. Override it if your `gulpfile.js` does not reside within the Django project's toplevel directory.
